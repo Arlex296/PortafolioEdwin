@@ -1,0 +1,152 @@
+    .container {
+        display: flex;
+        margin-top: 70px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .column {
+        flex: 7;
+        padding: 20px;
+    }
+    
+    .column-2 {
+        flex: 4;
+        margin-top: 50px;
+        padding: 70px;
+        background-color: #c9c7c1;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+    
+    .imagen {
+        display: block;
+        margin: 90px;
+        border-radius: 50%;
+        width: 85%;
+        transition: transform 0.3s;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        margin-left: 20px;
+    }
+    
+    .imagen:hover {
+        transform: scale(1.2);
+    }
+    
+    .foto {
+        display: flex;
+        align-content: stretch;
+        justify-content: flex-end;
+    }
+    
+    .image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+    }
+    
+    #imagen1 {
+        width: 70%;
+        height: 500px;
+        object-fit: cover;
+        margin-bottom: 50px;
+        margin-bottom: 50px;
+        transition: transform 0.3s ease;
+        margin-top: 40px;
+    }
+    
+    #imagen1:hover {
+        transform: scale(1.2);
+    }
+    /* animacion de titulo desarrollo junior*/
+    
+    .animated {
+        animation: color-animation 3s infinite alternate;
+        transition: font-size 0.3s ease;
+    }
+    
+    h3 {
+        margin-left: 80px;
+    }
+    
+    h2 {
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    
+    .animated:hover {
+        font-size: 2.3em;
+    }
+    
+    @keyframes color-animation {
+        0% {
+            color: red;
+        }
+        50% {
+            color: rgb(255, 0, 179);
+        }
+        100% {
+            color: green;
+        }
+    }
+    
+    .image p {
+        margin-top: 20px;
+        text-align: justify;
+    }
+    /* animacion de titulo nombre*/
+    
+    .animatednombre {
+        transition: transform 0.2s ease, color 0.2s ease;
+    }
+    
+    .animatednombre:hover {
+        animation: shake-animation 0.7s infinite;
+        color: blue;
+    }
+    
+    @keyframes shake-animation {
+        0% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(-5px);
+        }
+        50% {
+            transform: translateX(5px);
+        }
+        75% {
+            transform: translateX(-5px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    /* Media Query para dispositivos móviles */
+    
+    @media (max-width: 767px) {
+        .container {
+            flex-direction: column;
+        }
+        .column {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .imagen {
+            margin: 0 auto;
+            transition: transform 0.3s;
+        }
+        .imagen:hover {
+            transform: scale(1.2);
+        }
+        .image p {
+            margin-top: 10px;
+            padding: 30px;
+            text-align: justify;
+        }
+    }

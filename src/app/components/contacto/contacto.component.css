@@ -1,0 +1,222 @@
+.column {
+    flex: 7;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #056b05, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: "Source Sans Pro", sans-serif;
+    -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+    animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+}
+
+.container {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+
+h2 {
+    color: black;
+    margin-bottom: 100px;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 70px;
+    font-style: italic;
+    margin-left: 60px;
+}
+
+.column-2 {
+    flex: 4;
+    margin-top: 70px;
+    color: #dbd2d2;
+    height: 100%;
+    overflow: hidden;
+    background-color: #c9c7c1;
+}
+
+p {
+    font-size: 25px;
+    color: #070707;
+    font-weight: bold;
+    font-style: italic;
+    opacity: 0.7;
+    /* Hacer el texto un poco opaco por defecto */
+    transition: opacity 0.3s ease;
+    /* Añadir transición para suavizar el cambio */
+}
+
+
+/* Estilo para el párrafo cuando el mouse está sobre él */
+
+p:hover {
+    opacity: 1;
+    /* Hacer el texto más oscuro cuando el mouse pasa sobre él */
+}
+
+@-webkit-keyframes reveal {
+    80% {
+        letter-spacing: 8px;
+    }
+    100% {
+        background-size: 300% 300%;
+    }
+}
+
+@keyframes reveal {
+    80% {
+        letter-spacing: 8px;
+    }
+    100% {
+        background-size: 300% 300%;
+    }
+}
+
+@-webkit-keyframes glow {
+    40% {
+        text-shadow: 0 0 8px #4ae92a;
+    }
+}
+
+@keyframes glow {
+    40% {
+        text-shadow: 0 0 8px #4ae92a;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container1 {
+    display: flex;
+    max-width: 50vw;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.no-animation {
+    -webkit-animation: none;
+    animation: none;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    flex: 0 0 calc(25% - 12px);
+    height: 150px;
+    width: 100px;
+    object-position: center;
+    padding: 6px;
+}
+
+.no-animation {
+    -webkit-animation: none;
+    animation: none;
+}
+
+img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transform: scale(1.05) rotate(-1.2deg);
+    transition: 0.6s ease-out;
+}
+
+.contactos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    list-style: none;
+    justify-content: center;
+}
+
+.contactos li {
+    text-align: center;
+}
+
+.circular-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.contacto {
+    height: 1500px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.black-background {
+    background-color: rgb(104, 193, 245);
+    position: absolute;
+    width: 100%;
+}
+
+.white-text {
+    color: rgb(7, 7, 7);
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    position: 100%;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin-top: 15px;
+    }
+    h2 {
+        text-align: left;
+        font-weight: bold;
+        margin-top: 10px;
+        font-style: italic;
+    }
+    .contactos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 25px;
+        list-style: none;
+        Place-content: 100%;
+    }
+    .contacto {
+        height: 1500px;
+        width: 270px;
+        margin: 0 auto;
+    }
+    img {
+        flex: 0 0 calc(25% - 12px);
+        height: 50px;
+        width: 50px;
+        object-position: center;
+        padding: 6px;
+    }
+    /* codigo para  flex   de android de  las iamgenes   titulos */
+    li {
+        display: flex;
+        align-items: center;
+    }
+    li p {
+        margin-left: 10px;
+    }
+    .zoom-image {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+}

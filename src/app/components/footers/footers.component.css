@@ -1,0 +1,18 @@
+/* footer*/
+
+footer {
+    background-color: rgb(79, 81, 218);
+    height: 50%;
+    color: white;
+    padding: 10px;
+    margin-top: 70px;
+}
+
+.main1 {
+    display: flex;
+    margin: 0 auto;
+}
+
+a img:hover {
+    color: #fff;
+}

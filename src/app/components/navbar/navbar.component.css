@@ -1,0 +1,79 @@
+    .nav-link-hover:hover {
+        color: white;
+    }
+    
+    .nav-link strong {
+        font-weight: bold;
+    }
+    
+    .navbar {
+        background-color: rgb(238, 238, 241);
+        color: rgb(8, 8, 8);
+        transition: background-color 0.5s;
+        margin-bottom: 0;
+        width: 100%;
+        /* Ampliar al 100% del ancho disponible */
+        height: 70px;
+    }
+    
+    .nav-link {
+        font-size: 20px;
+        background: white;
+        display: inline-block;
+    }
+    
+    .nav-link img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    
+    .nav-link-hover:hover {
+        color: #27b3a5;
+    }
+    
+    .dropdown-menu {
+        background-color: yellow;
+    }
+    
+    .nav-link[_ngcontent-ng-c3135412663] {
+        font-size: 20px;
+        background-color: rgb(79, 81, 218);
+    }
+    /*css imagenes narvar*/
+    
+    nav {
+        display: flex;
+    }
+    
+    ul.social-media-list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+    
+    ul.social-media-list li {
+        margin-right: 15px;
+    }
+    
+    ul.social-media-list li:last-child {
+        margin-right: 0;
+    }
+    
+    ul.social-media-list img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+    }
+    
+    ul.social-media-list img.zoom-image:hover {
+        transform: scale(1.5);
+    }
+    
+    #navbarSupportedContent {
+        background-color: white;
+        ;
+    }

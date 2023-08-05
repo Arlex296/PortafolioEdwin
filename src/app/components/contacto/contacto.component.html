@@ -1,0 +1,83 @@
+<div class="container mx-auto" style="max-width: 85%;">
+
+    <div class="column column-2">
+        <div class="container">
+            <div class="column column-2">
+
+
+
+            </div>
+            <div class="column">
+                <h1 class="animatednombre ">Contacto</h1>
+
+            </div>
+
+        </div>
+
+        <h2 class="no-animation"> Contáctame si quieres que trabajemos juntos</h2>
+
+
+        <div class="contacto">
+            <ul class="contactos">
+                <li>
+                    <a href="http://wa.me/573125577623"><img src="../../../assets/imagenes/whatsapp.png" class="zoom-image circular-image"></a>
+                    <p>Whatsapp</p>
+                </li>
+                <li>
+                    <a href="https://github.com/Arlex296"><img src="../../../assets/imagenes/github.png" class="zoom-image circular-image"></a>
+                    <p>Repositorio</p>
+
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/edwin-bustamante-098a62253/"><img src="../../../assets/imagenes/linkedin.jpg" class="zoom-image circular-image"></a>
+                    <p>Linkedin</p>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/arlexbte/"><img src="../../../assets/imagenes/instagram.jfif" class="zoom-image circular-image"></a>
+                    <p>Instagram</p>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/edwinarlexb"><img src="../../../assets/imagenes/facebook.png" class="zoom-image circular-image"></a>
+                    <p>Facebook</p>
+                </li>
+
+
+                <div>
+                    <li>
+                        <a (click)="toggleCollapse('celular')" style="cursor: pointer;">
+                            <img src="../../../assets/imagenes/celular.jpg" alt="Gmail" class="zoom-image circular-image">
+                        </a>
+                        <p>Celular</p>
+                    </li>
+                    <div class="collapse collapse-horizontal" [ngClass]="{ 'show': isCelularCollapsed }" id="celularCollapseExample">
+                        <div class="card card-body black-background white-text" style="width: 300px;">
+                            3125577623
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <li>
+                        <a (click)="toggleCollapse('gmail')" style="cursor: pointer;">
+                            <img src="../../../assets/imagenes/gmail.png" alt="Gmail" class="zoom-image circular-image">
+                        </a>
+                        <p>Correo</p>
+                    </li>
+                    <div class="collapse collapse-horizontal" [ngClass]="{ 'show': isGmailCollapsed }" id="gmailCollapseExample">
+                        <div class="card card-body black-background white-text" style="width: 300px;">
+                            edwinbustamante2010@gmail.com
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </ul>
+        </div>
+
+
+
+    </div>
+
+</div>
